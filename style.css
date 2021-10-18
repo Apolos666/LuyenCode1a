@@ -1,0 +1,540 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+
+*,
+*:after,
+*:before {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+a {
+    font-size: 16px;
+    font-weight: 500;
+    color: #202336;
+    text-decoration: none;
+}
+
+a.disable {
+    font-size: 16px;
+    font-weight: 400;
+    color: #B8BECD;
+}
+
+h1 {
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 80px;
+    color: #202336;
+}
+
+h2 {
+    font-size: 36px;
+    color: #000000;
+    font-weight: 700;
+    line-height: 50px;
+}
+
+h4 {
+    font-size: 22px;
+    font-weight: 600;
+    color: #202336;
+}
+
+h5 {
+    font-size: 19px;
+    font-weight: 700;
+    color: #000000;
+    line-height: 30px;
+}
+
+h6 {
+    font-size: 18px;
+    font-weight: 400;
+    color: #202336;
+    margin-bottom: 0;
+}
+
+p {
+    font-size: 17px;
+    font-weight: 300;
+    color: #7D7987;
+    margin-bottom: 0;
+}
+
+.wrapper {
+    margin-bottom: 270px;
+}
+
+/* 
+==============================
+    Root Variable define
+==============================
+*/
+:root {
+    --primary-color: #FB8F1D;
+    --header-text: #202336;
+    --disabled-text: #B8BECD;
+    --white-text: #ffffff;
+}
+
+/* 
+==============================
+    Header
+==============================
+*/
+header {
+    margin-top: 35px;
+}
+
+.navigation-wrap .nav-link.active {
+    color: var(--header-text);
+}
+
+.navigation-wrap .nav-link.disabled {
+    color: var(--disabled-text);
+}
+
+.main-btn {
+    padding: 8px 46px;
+    font-size: 15px;
+    text-align: center;
+    line-height: 40px;
+    color: var(--primary-color);
+    border: 1px solid var(--primary-color);
+    border-radius: 8px;
+    margin-left: 18px;
+}
+
+.main-btn.main-btn-active {
+    color: #fff;
+    background-color: var(--primary-color);
+}
+
+/* 
+==============================
+    Section Destinations
+==============================
+*/
+.section-des {
+    margin-top: 81px;
+    position: relative;
+}
+
+.section-des::before {
+    content: "";
+    position: absolute;
+    background: url(./image/Icon/element3.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 20px;
+    height: 20px;
+    top: 5%;
+    left: 45%;
+}
+
+.section-des::after {
+    content: "";
+    position: absolute;
+    background: url(./image/Icon/element2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 20px;
+    height: 20px;
+    bottom: -20px;
+    left: 50%;
+}
+
+.des-header {
+    margin-bottom: 74px;
+}
+
+.des-description {
+    margin-bottom: 71px;
+    position: relative;
+}
+
+.des-description::before {
+    content: "";
+    position: absolute;
+    width: 32px;
+    height: 2px;
+    background: var(--header-text);
+    border-radius: 4px;
+    top: calc(100% + 21px);
+}
+
+.des-description::after {
+    content: "";
+    position: absolute;
+    background: url(./image/Icon/element2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 20px;
+    height: 20px;
+    bottom: -65px;
+    left: -15%;
+}
+
+.btn-selection {
+    width: 220px;
+    height: 52px;
+    border: 0.8px solid #AFB0B9;
+    border-radius: 6px;
+    margin-bottom: 35px;
+}
+
+.main-btn-des {
+    margin-left: 0;
+}
+
+/* 
+==============================
+    Section About
+==============================
+*/
+.section-about {
+    position: relative;
+}
+
+.section-about::before {
+    position: absolute;
+    content: "";
+    background: url(./image/Icon/element3.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 20px;
+    height: 20px;
+    top: 0;
+    left: 50%;
+    transform: rotate(95deg);
+}
+
+.section-about::after {
+    position: absolute;
+    content: "";
+    background: url(./image/Icon/element2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 20px;
+    height: 20px;
+    right: 20%;
+    bottom: 27%;
+    transform: rotate(95deg);
+}
+
+.about-text,
+.about-des {
+    margin-bottom: 20px;
+}
+
+/* 
+==============================
+    Section About
+==============================
+*/
+.partner-option {
+    text-align: right;
+    margin-right: 20px;
+    position: relative;
+    color: var(--primary-color);
+}
+
+.partner-option::after {
+    position: absolute;
+    content: "";
+    border: solid var(--primary-color);
+    border-width: 0 2px 2px 0;
+    display: inline-block;
+    padding: 3px;
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    right: -10px;
+    top: 7px;
+}
+
+/* 
+==============================
+    Section Partner
+==============================
+*/
+.section-partner {
+    position: relative;
+}
+
+.section-partner::before {
+    position: absolute;
+    content: "";
+    background: url(./image/Icon/element3.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 20px;
+    height: 20px;
+    top: 65%;
+    left: 3.5%;
+    transform: rotate(100deg);
+}
+
+.section-partner::after {
+    position: absolute;
+    content: "";
+    background: url(./image/Icon/element2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 20px;
+    height: 20px;
+    bottom: -60px;
+    left: 50%;
+}
+
+.partner-link {
+    position: relative;
+}
+
+.partner-link::after {
+    position: absolute;
+    content: "";
+    background: url(./image/Icon/element2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 20px;
+    height: 20px;
+    top: -35px;
+    right: 25%;
+}
+
+.partner-bottom {
+    margin-top: 56px;
+}
+
+.partner-img img {
+    border-radius: 8px;
+}
+
+.partner-img {
+    position: relative;
+}
+
+.partner-info {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: #fff;
+    border-radius: 0 8px 0 8px;
+    padding: 10px 10px 0 0;
+}
+
+/* 
+==============================
+    Section Contacts
+==============================
+*/
+.section-contact {
+    position: relative;
+}
+
+.section-contact::before {
+    position: absolute;
+    content: "";
+    background: url(./image/Icon/element2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 20px;
+    height: 20px;
+    top: 10%;
+    left: 15%;
+}
+
+.section-contact::after {
+    position: absolute;
+    content: "";
+    background: url(./image/Icon/element3.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 20px;
+    height: 20px;
+    bottom: 30%;
+    left: 40%;
+    transform: rotate(105deg);
+}
+
+.section-contact-btn {
+    margin-top: 39px;
+}
+
+/* 
+==============================
+    Section Features
+==============================
+*/
+.section-ft-text {
+    margin-bottom: 43px;
+}
+
+.section-ft-des {
+    margin-bottom: 40px;
+}
+
+.section-ft-des p {
+    color: #000000;
+    font-weight: 400;
+}
+
+.icon-rating img {
+    width: 24px;
+    height: 24px;
+    margin-right: 16px;
+}
+
+.icon-rating {
+    margin-bottom: 30px;
+}
+
+.section-ft-img img {
+    border-radius: 8px;
+}
+
+.author-name {
+    color: #000000;
+    font-weight: 700;
+}
+
+.section-ft-img {
+    position: relative;
+}
+
+.section-ft-img img {
+    position: relative;
+    z-index: 10;
+}
+
+.section-ft-img::before {
+    position: absolute;
+    content: "";
+    background: url(./image/Icon/element3.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 30px;
+    height: 30px;
+    bottom: -3%;
+    left: -3%;
+    z-index: 11;
+    transform: rotate(97deg);
+}
+
+.section-ft-img::after {
+    position: absolute;
+    content: "";
+    background: url(./image/Icon/element2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 30px;
+    height: 30px;
+    top: -2.5%;
+    right: 27%;
+    z-index: 1;
+}
+
+.img-option {
+    background: #fff;
+    position: absolute;
+    bottom: 0%;
+    right: 29%;
+    padding: 10px 0 0 20px;
+    border-radius: 8px 0 8px 0;
+    z-index: 10;
+}
+
+.img-option img:nth-child(1) {
+    margin-right: 15px;
+}
+
+/* 
+==============================
+    Section Product
+==============================
+*/
+.product-option {
+    text-align: right;
+    margin-right: 20px;
+    position: relative;
+    color: var(--primary-color);
+}
+
+.product-option::after {
+    position: absolute;
+    content: "";
+    border: solid var(--primary-color);
+    border-width: 0 2px 2px 0;
+    display: inline-block;
+    padding: 3px;
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    right: -10px;
+    top: 7px;
+}
+
+.product-bottom {
+    margin-top: 56px;
+}
+
+.product-img {
+    width: 260px;
+    height: 300px;
+}
+
+.img-full-w {
+    height: 100%;
+    width: 100%;
+}
+
+.product-img img {
+    border-radius: 8px 8px 0 0;
+}
+
+.product-des {
+    padding: 13px 0 23px 0;
+}
+
+.product-link-item {
+    color: var(--primary-color);
+}
+
+/* 
+==============================
+    Section Footer
+==============================
+*/
+.footer {
+    padding: 80px;
+    background-color: #F9F9FB;
+    position: relative;
+}
+
+.footer::after {
+    position: absolute;
+    content: "";
+    bottom: 15%;
+    background: #C4C4C4;
+    height: 0.6px;
+    width: 1140px;
+}
+
+.footer-des {
+    margin: 26px 0 55px 0;
+}
+
+.footer-des p {
+    margin: 10px 0;
+}
+
+.social-media img {
+    margin-right: 35px;
+}
+
+.social-media {
+    position: relative;
+    top: 60px;
+}
